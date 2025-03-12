@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
-namespace GladiatorSimulator {
+namespace GladiatorSimulator.Authoring {
 
 public class CameraHolderAuthoring : MonoBehaviour {
     public GameObject cameraObject;
