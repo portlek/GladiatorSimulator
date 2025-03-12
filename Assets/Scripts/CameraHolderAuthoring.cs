@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
-namespace GladiatorSimulator;
+namespace GladiatorSimulator {
 
 public class CameraHolderAuthoring : MonoBehaviour {
     public GameObject cameraObject;
@@ -18,4 +18,6 @@ public class CameraHolderAuthoringBaker : Baker<CameraHolderAuthoring> {
             CameraEntity = GetEntity(authoring.cameraObject, TransformUsageFlags.Dynamic)
         });
     }
+}
+
 }
