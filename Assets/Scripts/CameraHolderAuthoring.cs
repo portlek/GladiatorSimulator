@@ -2,7 +2,6 @@
 using UnityEngine;
 
 namespace GladiatorSimulator {
-
 public class CameraHolderAuthoring : MonoBehaviour {
     public GameObject cameraObject;
 }
@@ -19,5 +18,4 @@ public class CameraHolderAuthoringBaker : Baker<CameraHolderAuthoring> {
         });
     }
 }
-
 }
