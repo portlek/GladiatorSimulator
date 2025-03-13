@@ -3,15 +3,16 @@ using UnityEngine;
 namespace GladiatorSimulator {
 [DefaultExecutionOrder(ExecutionOrder.Lowest)]
 public class InputSystem : MonoBehaviour {
-    private Inputs _inputs;
-    private Vector2 _movement;
+    public Vector2 Movement { get; private set; }
 
-    private void Update() {
-        _movement = _inputs.Player.Move.ReadValue<Vector2>();
-    }
+    private Inputs _inputs;
 
     private void Awake() {
         _inputs = new Inputs();
+    }
+
+    private void Update() {
+        Movement = _inputs.Player.Move.ReadValue<Vector2>();
     }
 }
 }
